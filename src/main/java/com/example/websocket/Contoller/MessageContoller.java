@@ -1,5 +1,6 @@
-package com.example.websocket;
+package com.example.websocket.Contoller;
 
+import com.example.websocket.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,6 @@ public class MessageContoller {
     @GetMapping
     public ResponseEntity send(){
         messageService.sendMessageToTopic("pooya","hello");
-        return ResponseEntity.ok("ok");
+        return ResponseEntity.ok("message send");
     }
 }

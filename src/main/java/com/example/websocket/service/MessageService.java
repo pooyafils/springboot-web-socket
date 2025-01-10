@@ -1,4 +1,4 @@
-package com.example.websocket;
+package com.example.websocket.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
